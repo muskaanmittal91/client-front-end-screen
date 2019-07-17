@@ -74,7 +74,7 @@ const clientProfile=props=>{
     let data=RequestClientDetails() ;               // This data variable will accept the jason data from the API
     return (
         <div style={{}}>
-            <Card title="Profile"  headStyle={{background:"#1890ff",textAlign:"center",color:"white"}} style={{width: "90%", border:"solid 1px black" ,margin: "1em" }}>
+            <Card title="Profile"  headStyle={{background:"#1c2430",textAlign:"center",color:"white",padding:"1em"}} style={{width: "90%", border:"solid 1px black" ,margin: "auto"}}>
                 <h3><Icon type="user" /> {data.firstname} {data.lastname}</h3>
                 <h3><Icon type="phone" /> {data.phonenumber}</h3>
                 <h3><Icon type="phone" /> {data.alternateNumber}(Alternate)</h3>
