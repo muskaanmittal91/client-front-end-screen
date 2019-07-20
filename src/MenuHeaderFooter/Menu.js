@@ -10,6 +10,7 @@ import Payment from "../Components/Payment/Payment";
 import Profile from "../Components/Profile/ClientProfile";
 import Support from "../Components/Support/App";
 import Venue from "../Components/Venue/Venue";
+import PaymentsHistoy from "../Components/PaymentsHistory/PaymentsHistory"
 import Footer from "./Footer";
 const { Header, Content, Sider } = Layout;
 
@@ -62,8 +63,8 @@ class RouterApp extends React.Component {
               </Menu.Item>
               <Menu.Item key="5">
                 <Icon type="interaction" />
-                <span>Manage Payments</span>
-                <Link to="/payment" />
+                <span>Payments History</span>
+                <Link to="/payments" />
               </Menu.Item>
               <Menu.Item key="6">
                 <Icon type="bank" />
@@ -122,6 +123,8 @@ class RouterApp extends React.Component {
               <Route path="/profile" component={Profile} />
               <Route path="/support" component={Support} />
               <Route path="/venue" component={Venue} />
+              <Route path="/payments" component={PaymentsHistoy} />
+
             </Content>
             <Footer />
           </Layout>
